@@ -1,0 +1,24 @@
+# Arquivos de compilação
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.pyo
+*.whl
+
+# Configurações de ambiente virtual
+venv/
+.env
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de logs
+*.log
+
+# Dependências do Poetry
+poetry.lock
