@@ -1,0 +1,17 @@
+exception sqlite3.Error
+A classe base das outras exceções neste módulo. É uma subclasse de Exception.
+
+exception sqlite3.DatabaseError
+	wsmag = 'Erros relacionados ao banco de dados'
+
+exception sqlite3.IntegrityError
+   	wsmag = 'Erro de integridade' 
+
+exception sqlite3.ProgrammingError
+	wsmag = 'Erro de Programação'
+
+exception sqlite3.OperationalError
+	wsmag = 'Erro de operação do banco de dados'
+
+exception sqlite3.NotSupportedError
+	wsmag = 'Erro Ação não é suportado pelo banco de dados'

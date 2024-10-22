@@ -1,0 +1,6 @@
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+python -m venv agdenv
+.\agdenv\Scripts\Activate.ps1
+
+pyinstaler -w --onefile --windowed --noconsole pcadmenu.py

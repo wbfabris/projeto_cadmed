@@ -1,0 +1,9 @@
+Para Windows, é
+{     
+    "python.pythonPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe"      
+    "python.linting.pylintPath": "${workspaceFolder}\\.venv\\Scripts\\pylint.exe"
+}  apenas para completar. 
+
+Adicionar "python.linting.pylintPath": "venv/bin/pylint" foi o suficiente para mim, 
+    embora eu já tivesse definido o pythonPath 
+- 

@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "projeto-cadmed"
+version = "0.1.0"
+description = ""
+authors = ["Walter Beauclair Fabris <wbfabris@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pysimplegui = "^5.0.6"
+requests = "^2.32.3"
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.13.2"
+black = "22.1.0"
+pytest = "^8.3.3"
+
+[tool.black]
+line-length = 79  # Controla o limite de caracteres por linha
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

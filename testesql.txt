@@ -1,0 +1,27 @@
+SELECT med.id_med, med.nm_med,
+       end.id_med, end.id_end, end.id_local,
+       age.id_med, age.id_end, end.id_age,
+       con.id_med, con.id_end, con.id_age,
+FROM TCADMED0 as med, 
+     TCADMEDEND0 as end,
+     TCADMEDAGEN0 as age,
+     TCADMEDCONT0 as con
+WHERE me.id_med = '122' 
+AND   me.id_med = end.id_med
+AND   me.id_med = age.id_med
+AND   me.id_med = age.id_con
+
+----------------------------------------------
+SELECT med.id_med, med.nm_med,
+       end.id_med, end.id_end, end.id_local,
+       age.id_med, age.id_end, end.id_age,
+       con.id_med, con.id_end, con.id_age
+FROM TCADMED0 med
+  LEFT JOIN TCADMEDEND0  end  ON (med.id_med   = end.id_med)
+  LEFT JOIN TCADLOC0     loc  ON (end.id_local = loc.id_local)
+  LEFT JOIN TCADMEDAGEN0 agen ON (med.id_med   = agen.id_med)
+  LEFT JOIN TCADMEDCONT0 cont ON (med.id_med   = cont.id_med)
+  LEFT JOIN TCADCONV0    conv ON (cont.id_conv = conv.id_conv)
+ORDER BY nm_med
+
+
